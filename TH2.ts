@@ -4,17 +4,17 @@ class Calcutor {
     static readonly SUBTRATION='-';
     static readonly MULTIPPLICATION='*';
     static readonly DIVISION='/';
-    public static calculate(afirstOperand : number, b: number, operator: string): any {
+    public static calculate(firstOperand : number, secondOperand: number, operator: string): any {
         switch (operator) {
             case this.ADDITION:
-                return afirstOperand  + b;
+                return firstOperand  + secondOperand;
             case this.SUBTRATION:
-                return afirstOperand  - b;
+                return firstOperand  - secondOperand;
             case this.MULTIPPLICATION:
-                return afirstOperand  * b;
+                return firstOperand  * secondOperand;
             case this.DIVISION:
-                if (b != 0) {
-                    return afirstOperand  / b;
+                if (secondOperand != 0) {
+                    return firstOperand  / secondOperand;
                 } else {
                     console.log("can not divide by 0");
                 }
